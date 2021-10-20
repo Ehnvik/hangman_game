@@ -4,9 +4,10 @@ from hangman_guy import lives_hangman_guy
 import string
 import sys
 
+
 # imported random word from word_list in words
 
-
+# Choose a random word from the word list
 def get_correct_word(words):
     word = random.choice(word_list)
     while "-" in word or " " in word:
@@ -15,6 +16,7 @@ def get_correct_word(words):
     return word.upper()
 
 
+# Defined varibales that later used in the game
 def main():
     lives = 7
     word = get_correct_word(word_list)
@@ -25,12 +27,13 @@ def main():
     while len(word_letter) > 0 and lives > 0:
         print("Game started!\n""You have", lives, "lives left")
         print("You have used these letters: ", " ".join(used_letter))
-
+        # What letters used
         lists = [letter if letter in used_letter else '-' for letter in word]
         print(lives_hangman_guy[lives])
         print("Current word: ", " ".join(lists))
         print("\n")
 
+        # Let the user guess a letter
         user_letter = input("Guess a letter: ").upper()
         print("")
         if user_letter in main_words - used_letter:
@@ -39,7 +42,7 @@ def main():
                 word_letter.remove(user_letter)
                 print(f"Correct! You typed in {user_letter}.""\n")
             else:
-                lives = lives - 1
+                lives = lives - 1  # Takes a life for every wrong answer
                 print(f"Wrong! {user_letter} is not in the word.""\n")
 
         elif user_letter in used_letter:
@@ -48,16 +51,17 @@ def main():
         else:
             print(f"{user_letter} is not a letter, try again!" "\n")
 
-    if lives == 0:
+    if lives == 0:  # Stating that the game is over when lives == 0
         print(lives_hangman_guy[lives])
         print(f"You lost! The word was {word}.")
     else:
         print(f"Congratulations! You have completed the word {word}.")
 
 
-def startGame():
+# Let the user to choose between starting the game or exit the game
+def start_game():
     while True:
-        user_input = input("Hangman! Type 'yes' to play and 'no' to exit'\n\n")
+        user_input = input("Hangman! Type 'yes' to play or 'no' to exit'\n\n")
 
         if user_input == "yes":
             print("\n\n")
@@ -72,7 +76,7 @@ def startGame():
             print("Please choose 'yes' or 'no'\n\n")
 
 
-startGame()
+start_game()
 
 
 main()

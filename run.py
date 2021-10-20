@@ -54,14 +54,17 @@ def main():
     if lives == 0:  # Stating that the game is over when lives == 0
         print(lives_hangman_guy[lives])
         print(f"You lost! The word was {word}.")
+
     else:
         print(f"Congratulations! You have completed the word {word}.")
+
+    start_game()
 
 
 # Let the user to choose between starting the game or exit the game
 def start_game():
     while True:
-        user_input = input("Hangman! Type 'yes' to play or 'no' to exit\n\n")
+        user_input = input("Hangman! Type 'yes' to play or 'no' to exit'\n\n")
 
         if user_input == "yes":
             print("\n\n")
@@ -74,6 +77,7 @@ def start_game():
         else:
             print("\n")
             print("Please choose 'yes' or 'no'\n\n")
+        start_game()
 
 
 start_game()

@@ -1,6 +1,7 @@
 import random
 from words import word_list
 import string
+import sys
 
 # imported random word from word_list in words
 
@@ -21,14 +22,16 @@ def main():
     used_letter = set()
 
     while len(word_letter) > 0 and lives > 0:
-        print("You have", lives, "lives left") 
+        print("You have", lives, "lives left")
         print("You have used these letters: ", " ".join(used_letter))
 
         lists = [letter if letter in used_letter else '-' for letter in word]
 
         print("Current word: ", " ".join(lists))
+        print("\n")
 
-        user_letter = input("Guess a letter: ""\n").upper()
+        user_letter = input("Guess a letter: ").upper()
+        print("")
         if user_letter in main_words - used_letter:
             used_letter.add(user_letter)
             if user_letter in word_letter:
@@ -48,6 +51,26 @@ def main():
         print(f"You lost! The word was {word}.")
     else:
         print(f"Congratulations! You have completed the word {word}.")
+
+
+def startGame():
+    while True:
+        user_input = input("Hangman! Type 'yes' to play and 'no' to exit'\n\n")
+
+        if user_input == "yes":
+            print("\n\n")
+            print(main())
+
+        elif user_input == "no":
+            print("\n\n")
+            print("See you next time!")
+            sys.exit()
+        else:
+            print("\n")
+            print("Please choose 'yes' or 'no'\n\n")
+
+
+startGame()
 
 
 main()

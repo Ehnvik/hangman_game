@@ -20,12 +20,12 @@ def main():
     main_words = set(string.ascii_uppercase)
     used_letter = set()
 
-    while len(word_letter) > 0:
+    while len(word_letter) > 0 and lives > 0:
         print("You have", lives, "lives left and you have used these letters: ", " ".join(used_letter))
-    
+
         lists = [letter if letter in used_letter else '-' for letter in word]
 
-        print("current word: ", " ".join(lists))
+        print("Current word: ", " ".join(lists))
 
         user_letter = input("Guess a letter: ""\n").upper()
         if user_letter in main_words - used_letter:
@@ -36,12 +36,17 @@ def main():
             else:
                 lives = lives - 1
                 print(f"Wrong! {user_letter} is not in the word.""\n")
-            
+
         elif user_letter in used_letter:
-            print(f"you have already used {user_letter}. Try again!""\n")
-        
+            print(f"You have already used {user_letter}. Try again!""\n")
+
         else:
             print(f"{user_letter} is not a letter, try again!" "\n")
+
+    if lives == 0:
+        print(f"You lost! The word was {word}.")
+    else:
+        print("Congratulations! You have completed the game.")
 
 
 main()

@@ -1,4 +1,4 @@
-lives_visual_dict = {
+lives_hangman_guy = {
         0: """
                 ___________
                | /        | 

@@ -1,6 +1,6 @@
 import random
 from words import word_list
-from hangman_guy import lives_visual_dict
+from hangman_guy import lives_hangman_guy
 import string
 import sys
 
@@ -27,7 +27,7 @@ def main():
         print("You have used these letters: ", " ".join(used_letter))
 
         lists = [letter if letter in used_letter else '-' for letter in word]
-        print(lives_visual_dict[lives])
+        print(lives_hangman_guy[lives])
         print("Current word: ", " ".join(lists))
         print("\n")
 
@@ -49,7 +49,7 @@ def main():
             print(f"{user_letter} is not a letter, try again!" "\n")
 
     if lives == 0:
-        print(lives_visual_dict[lives])
+        print(lives_hangman_guy[lives])
         print(f"You lost! The word was {word}.")
     else:
         print(f"Congratulations! You have completed the word {word}.")

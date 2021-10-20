@@ -14,13 +14,14 @@ def get_correct_word(words):
 
 
 def main():
+    lives = 7
     word = get_correct_word(word_list)
     word_letter = set(word)
     main_words = set(string.ascii_uppercase)
     used_letter = set()
 
     while len(word_letter) > 0:
-        print("You have used these letters: ", " ".join(used_letter))
+        print("You have", lives, "lives left and you have used these letters: ", " ".join(used_letter))
     
         lists = [letter if letter in used_letter else '-' for letter in word]
 
@@ -33,6 +34,7 @@ def main():
                 word_letter.remove(user_letter)
                 print(f"Correct! You typed in {user_letter}.""\n")
             else:
+                lives = lives - 1
                 print(f"Wrong! {user_letter} is not in the word.""\n")
             
         elif user_letter in used_letter:

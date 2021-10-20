@@ -65,7 +65,7 @@ def main():
 def start_game():
     while True:
         print("")
-        user_input = input("Hangman! Type 'yes' to play or 'no' to exit\n\n")
+        user_input = input("Hangman! Type 'yes' to play or 'no' to exit.\n\n")
 
         if user_input == "yes":
             print("\n\n")

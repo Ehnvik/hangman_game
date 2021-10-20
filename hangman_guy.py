@@ -1,4 +1,4 @@
-lives_hangman_guy = {
+lives_hangman_guy = {     # Visual hangman guy used in game
         0: """
                 ___________
                | /        | 

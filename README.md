@@ -44,6 +44,7 @@ To win the game you have to guess all the correct letters to complete the word. 
 * Add a scoreboard of the best players.
 
 ## **Testing**
+
  I have manually tested this project by doing the following:
 
  * Passed the code through pep8online withought any bugs.
@@ -51,5 +52,13 @@ To win the game you have to guess all the correct letters to complete the word. 
  * Tested in my local terminal and the Code Institute Heroku Terminal.
 
  ![pep8-test](https://user-images.githubusercontent.com/87748379/138331958-e30b49a4-074b-4a4c-a2bc-4b249caf9650.JPG)
+
+### **Bugs**
+
+**Solved Bugs**
+* When I tested the game i found out that it did not have a return value at the end of the game. So everytime the game ended "None" got printed on the screen. 
+* I fixed this bug by calling the start_game() function again.
+
+![hangman-fixed-bug](https://user-images.githubusercontent.com/87748379/138333901-1f7c70ca-fe19-4d0c-be51-8a57dca65ec2.JPG)
 
 

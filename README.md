@@ -25,3 +25,10 @@ To win the game you have to guess all the correct letters to complete the word. 
 
 ![hangman-first-letter](https://user-images.githubusercontent.com/87748379/138300193-e75f3d49-5590-4622-b190-677f0f5c899f.JPG)
 
+* Accept user input.
+* Maintains how many lives the player has left.
+* Maintains which letters the player has guessed.
+
+![hangman-second-part](https://user-images.githubusercontent.com/87748379/138301872-97519c12-ef18-4731-966a-99d0dff82b25.JPG)
+
+

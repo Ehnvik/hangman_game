@@ -61,4 +61,17 @@ To win the game you have to guess all the correct letters to complete the word. 
 
 ![hangman-fixed-bug](https://user-images.githubusercontent.com/87748379/138333901-1f7c70ca-fe19-4d0c-be51-8a57dca65ec2.JPG)
 
+### **Remaining  Bugs**
+
+* No bugs remaining.
+
+### **Validator Testing**
+
+* No errors were returned when testing all three files.
+
+![pep8-test](https://user-images.githubusercontent.com/87748379/138331958-e30b49a4-074b-4a4c-a2bc-4b249caf9650.JPG)
+![pep8-test2](https://user-images.githubusercontent.com/87748379/138335206-1685c2e5-d478-4b67-b723-c60fe5926698.JPG)
+![pep8-test3](https://user-images.githubusercontent.com/87748379/138335287-03284427-21fe-4b7a-a290-171cdc3b9da3.JPG)
+
+
 

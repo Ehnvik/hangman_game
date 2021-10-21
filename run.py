@@ -25,7 +25,7 @@ def main():
     used_letter = set()
 
     while len(word_letter) > 0 and lives > 0:
-        print("Game started!\n""You have", lives, "lives left")
+        print("Game started!\n""You have", lives, "lives left.")
         print("You have used these letters: ", " ".join(used_letter))
         # What letters used
         lists = [letter if letter in used_letter else '-' for letter in word]

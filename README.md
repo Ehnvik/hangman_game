@@ -31,4 +31,12 @@ To win the game you have to guess all the correct letters to complete the word. 
 
 ![hangman-second-part](https://user-images.githubusercontent.com/87748379/138301872-97519c12-ef18-4731-966a-99d0dff82b25.JPG)
 
+* Input validation and error-checking.
+  * You can only enter letters. Not other characters.
+  * You cannot enter the same guess twice.
+
+![hangman-input-validation](https://user-images.githubusercontent.com/87748379/138312495-aec4da98-6a4a-471a-9223-d495d21feed6.JPG)
+
+
+
 

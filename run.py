@@ -5,7 +5,7 @@ import string
 import sys
 
 
-# imported random word from word_list in words
+# import a random word from word_list in words
 
 # Choose a random word from the word list
 def get_correct_word(words):

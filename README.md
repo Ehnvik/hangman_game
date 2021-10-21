@@ -43,7 +43,13 @@ To win the game you have to guess all the correct letters to complete the word. 
 * Allow players to also guess the word instead of letters.
 * Add a scoreboard of the best players.
 
+## **Testing**
+ I have manually tested this project by doing the following:
 
+ * Passed the code through pep8online withought any bugs.
+ * Given invalid inputs when playing the game. For examples numbers and other characters. 
+ * Tested in my local terminal and the Code Institute Heroku Terminal.
 
+ ![pep8-test](https://user-images.githubusercontent.com/87748379/138331958-e30b49a4-074b-4a4c-a2bc-4b249caf9650.JPG)
 
 

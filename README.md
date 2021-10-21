@@ -73,5 +73,21 @@ To win the game you have to guess all the correct letters to complete the word. 
 ![pep8-test2](https://user-images.githubusercontent.com/87748379/138335206-1685c2e5-d478-4b67-b723-c60fe5926698.JPG)
 ![pep8-test3](https://user-images.githubusercontent.com/87748379/138335287-03284427-21fe-4b7a-a290-171cdc3b9da3.JPG)
 
+## **Deployment**
+This project was deployed using Code Institute's mock terminal for Heroku.
 
+* Steps for deployment:
+  * Clone this repository.
+  * Create an account and a new app on Heroku.
+  * Configure vars with "KEY" in port and "8000" as value.
+  * Set the buildpacks to python and nodeJS in that order.
+  * Connect Heroku to Github.
+  * Connect and deploy the repository.
+
+## **Credits**
+
+* Tom on stackoverlow.com.
+* Tutor support on Code Institute.
+* FreeCodeCamp.org with this video: https://www.youtube.com/watch?v=8ext9G7xspg
+* Kite with this video: https://www.youtube.com/watch?v=m4nEnsavl6w
 

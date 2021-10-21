@@ -7,7 +7,7 @@ To win game in Hangmang. The user has to guess to correct letters to complete th
 
 ![hangman-amiresponsive](https://user-images.githubusercontent.com/87748379/138290920-f6823d61-ddc9-43f6-b724-00774194295d.JPG)
 
-## **How to play**
+## **How To Play**
 Before the game starts. The player is given a choice between starting the game or exit the game, by typing "yes" or "no". If the player types in "yes", the game starts. If the player types in "no", then the game ends.
 
 If the player choose to start the game. The player then gets assigned a hidden word from the computer. The user also get information that he or she has has 7 lives left to complete the word.
@@ -28,14 +28,21 @@ To win the game you have to guess all the correct letters to complete the word. 
 * Accept user input.
 * Maintains how many lives the player has left.
 * Maintains which letters the player has guessed.
+* Responds if the player guess the wrong letter.
+* A hanging man viusalize how many guesses left before the game ends. 
 
-![hangman-second-part](https://user-images.githubusercontent.com/87748379/138301872-97519c12-ef18-4731-966a-99d0dff82b25.JPG)
+![hangman-second-part](https://user-images.githubusercontent.com/87748379/138318672-51217fd6-d971-4f32-9443-1ba13e3e24c9.JPG)
 
 * Input validation and error-checking.
   * You can only enter letters. Not other characters.
   * You cannot enter the same guess twice.
 
 ![hangman-input-validation](https://user-images.githubusercontent.com/87748379/138312495-aec4da98-6a4a-471a-9223-d495d21feed6.JPG)
+
+### **Future Features**
+* Allow players to also guess the word instead of letters.
+* Add a scoreboard of the best players.
+
 
 
 

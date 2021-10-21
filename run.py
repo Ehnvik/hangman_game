@@ -16,7 +16,7 @@ def get_correct_word(words):
     return word.upper()
 
 
-# Defined varibales that later used in the game
+# Main function of the game
 def main():
     lives = 7
     word = get_correct_word(word_list)
